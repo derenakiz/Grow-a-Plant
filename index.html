@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+        <title>
+            Grow A Plant
+        </title>
+    </head> 
+        <link rel="preload" href="images/grow_frames/growframe1.png" as="image">
+        <link rel="preload" href="images/grow_frames/growframe2.png" as="image">
+        <link rel="preload" href="images/grow_frames/growframe3.png" as="image">
+        <link rel="preload" href="images/grow_frames/growframe4.png" as="image">
+        <body>
+            
+            <div id="gamecontainer">
+                <div id="gameviewport">
+
+                    <div id="startScreen" class="screen active">
+                        <div class="animated_background"></div>
+                        <button id="startButton" onclick="goto('flowerScreen')" aria-label="Start Game"></button>
+                    </div>
+
+                    <div id="flowerScreen" class="screen">
+                        <div class="background main_background"></div>
+                        <button id="seedButton1" onclick="chooseFlower('sprout1.png')" aria-label="Flower 1"></button>
+                        <button id="seedButton2" onclick="chooseFlower('sprout2.png')" aria-label="Flower 2"></button>
+                        <button id="seedButton3" onclick="chooseFlower('sprout3.png')" aria-label="Flower 3"></button>
+                        <button id="seedButton4" onclick="chooseFlower('sprout4.png')" aria-label="Flower 4"></button>
+                    </div>
+
+                    <div id="flowerpotScreen" class="screen">
+                        <div class="background main_background"></div>
+                        <button id="flowerpotButton1" onclick="choosePot('flowerpot_1.png')" aria-label="Flower Pot 1"></button>
+                        <button id="flowerpotButton2" onclick="choosePot('flowerpot_2.png')" aria-label="Flower Pot 2"></button>
+                        <button id="flowerpotButton3" onclick="choosePot('flowerpot_3.png')" aria-label="Flower Pot 3"></button>
+                        <button id="flowerpotButton4" onclick="choosePot('flowerpot_4.png')" aria-label="Flower Pot 4"></button>
+                    
+                
+                    </div>
+
+                    <div id="growScreen" class="screen">
+                        <div class="background main_background"></div>
+                        <img id="potImage" src="" alt="Flower pot">
+                        <img id="flowerImage" src="" alt="Flower">
+                        <img id="timingBarImage" src="images/timing_bar.png" alt="Timing Bar">
+                        <img id="bar" src="images/bar.png" alt="Timing Indicator">
+                        <img id="sparkles" src="images/sparkles_1.png" alt="Sparkles">
+                    </div>
+
+                </div>
+            </div>
+
+             <script src="growaplant.js"></script>
+        </body>
+</html>
